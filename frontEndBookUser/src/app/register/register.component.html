@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="card w-50 mx-auto p-5 text-center mt-5">
+    <h1> Register </h1>
+    <input [(ngModel)]="user.name" type="text" placeholder="name" class="form-control mt-2">
+    <input [(ngModel)]="user.lastname" type="text" placeholder="lastname" class="form-control mt-2">
+    <input [(ngModel)]="user.email" type="email" placeholder="email" class="form-control mt-2">
+    <input [(ngModel)]="user.password" type="password" placeholder="password" class="form-control mt-2">
+    <button class="btn btn-outline-dark form-control mt-2" (click)="create()">Register</button>
+  </div>
+</div>

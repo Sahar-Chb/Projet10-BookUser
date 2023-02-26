@@ -1,0 +1,23 @@
+<div class="container my-5">
+  <div class="d-flex justify-content-between ">
+    <h3 class="text-light">Update Address</h3>
+  </div>
+  <div class="card mt-5 p-5">
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <img src="assets/address.gif" class="w-100" alt="">
+      </div>
+      <div class="col-lg-6 p-2">
+        <input [(ngModel)]="contact.name" placeholder="name" type="text" class="form-control m-2">
+        <input [(ngModel)]="contact.lastname" placeholder="lastname" type="text" class="form-control m-2">
+        <input [(ngModel)]="contact.email" placeholder="email" type="text" class="form-control m-2">
+        <input [(ngModel)]="contact.tel" placeholder="tel" type="text" class="form-control m-2">
+        <input [(ngModel)]="contact.address" placeholder="address" type="text" class="form-control m-2">
+        <input  placeholder="image" type="file" (change)="select($event)" class="form-control m-2">
+
+        <img style="" [src]="'http://127.0.0.1:3000/getimage' + contact" alt="">
+        <button (click)="update()" class="btn btn-outline-dark m-2 form-control"> Save </button>
+      </div>
+    </div>
+  </div>
+</div>
